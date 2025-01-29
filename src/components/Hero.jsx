@@ -45,7 +45,7 @@ function Hero() {
                         initial={ {x: 100, opacity: 0}}
                         animate={{ x: 0, opacity: 1}}
                         transition={{ duration: 1, delay: 1.2}}
-                        className="rounded-2xl" src={profilePic} alt="Rahul Maharjan"></motion.img>
+                        className="mt-12 w-full max-w-xs h-auto rounded-2xl" src={profilePic} alt="Rahul Maharjan"></motion.img>
                     </div>
                 </div>
            </div> 
