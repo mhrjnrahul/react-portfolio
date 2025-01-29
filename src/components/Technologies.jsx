@@ -65,12 +65,12 @@ function Technologies() {
                 animate="animate"className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
-                <motion.div 
+                {/* <motion.div 
                 variants={iconVariants(6)}
                 initial="initial"
                 animate="animate"className="rounded-2xl border-4 border-neutral-800 p-4">
                     <TbBrandNextjs className="text-7xl" />
-                </motion.div>
+                </motion.div> */}
             </motion.div>
         </div>
     )
