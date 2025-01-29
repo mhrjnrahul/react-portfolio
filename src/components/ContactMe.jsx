@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 function ContactMe() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+    <div className="ml-[-20px] min-h-screen bg-black flex items-center justify-center p-4">
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-8">
         {/* Contact Information */}
         <div className="bg-black p-8 rounded-2xl backdrop-blur-sm border border-gray-700">
