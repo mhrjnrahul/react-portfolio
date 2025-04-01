@@ -42,7 +42,7 @@ export const PROJECTS = [
     title: "Zentry-clone",
     image: project4,
     description:
-      "A zlone of the website Zentry, with awesome animations with GSAP.",
+      "A clone of the website Zentry, with awesome animations with GSAP.",
     technologies: ["HTML", "CSS", "React", "GSAP", "Tailwind CSS"],
   },
 ];
