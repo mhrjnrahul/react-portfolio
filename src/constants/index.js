@@ -23,6 +23,7 @@ export const PROJECTS = [
     description:
       "An application for managing tasks and projects, with features such as task creation and tracking.",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
+    demo: "https://google-keep-clone-murex.vercel.app/",
   },
   {
     title: "Portfolio Website",
@@ -30,6 +31,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
+    demo: "https://react-portfolio-five-azure.vercel.app/",
   },
   {
     title: "To-Do List App",
@@ -44,6 +46,7 @@ export const PROJECTS = [
     description:
       "A clone of the website Zentry, with awesome animations with GSAP.",
     technologies: ["HTML", "CSS", "React", "GSAP", "Tailwind CSS"],
+    demo: "https://zentry-web-clone.vercel.app/",
   },
 ];
 
