@@ -32,7 +32,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Framer-motion"],
     demo: "https://react-portfolio-five-azure.vercel.app/",
   },
   {
