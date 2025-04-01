@@ -19,7 +19,13 @@ function ContactMe() {
                 </div>
                 <div className="cursor-pointer">
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-gray-100">maharjanrahul58@gmail.com</p>
+                  <a
+                    href="https://gmail.com"
+                    target="_blank"
+                    className="text-gray-100 hover:underline"
+                  >
+                    maharjanrahul58@gmail.com
+                  </a> 
                 </div>
               </div>
 
