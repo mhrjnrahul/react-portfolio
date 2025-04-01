@@ -3,7 +3,9 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Hi, I'm Rahul Maharjan, a passionate Front-End Developer dedicated to crafting modern, responsive, and visually appealing web experiences. With expertise in React and Tailwind CSS, I focus on building intuitive user interfaces that enhance user engagement. My goal is to turn ideas into pixel-perfect designs and seamless interactions, ensuring high performance and accessibility. Whether it's designing sleek landing pages or developing complex web applications, I thrive on creating digital experiences that leave a lasting impact. Let's build something amazing together! 🚀`;
+export const HERO_CONTENT = `I'm a passionate Front-End Developer focused on building  
+                            high-performance web applications using React.js, Tailwind CSS, Framer-motion and GSAP. I 
+                            turn ideas into interactive, pixel-perfect designs that enhance user experience.`;
 
 export const ABOUT_TEXT = `I'm Rahul Maharjan, a dedicated Front-End Developer with a strong passion 
 for crafting elegant, responsive, and user-friendly web applications.

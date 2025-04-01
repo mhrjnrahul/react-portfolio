@@ -36,7 +36,28 @@ function Hero() {
                         variants={container(1)}
                         initial="hidden"
                         whileInView="visbile"
-                        className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+                        className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}
+                        </motion.p>
+
+                        <motion.div 
+                        variants={container(1.5)}
+                        initial="hidden"
+                        whileInView="visbile"
+                        className="flex flex-col sm:flex-row gap-4 mt-4">
+                        
+                        <a 
+                            href="/Rahul_Resume.pdf" 
+                            target="_blank"
+                            className="px-6 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 transition">
+                            Download CV
+                        </a>
+
+                        <a 
+                            href="#projects" 
+                            className="px-6 py-2 border border-gray-400 text-white rounded-md shadow-md hover:bg-gray-800 transition">
+                            See My Work
+                        </a>
+                    </motion.div>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
