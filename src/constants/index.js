@@ -22,28 +22,28 @@ export const PROJECTS = [
     image: project1,
     description:
       "An application for managing tasks and projects, with features such as task creation and tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
   },
   {
     title: "Portfolio Website",
     image: project2,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
   },
   {
     title: "To-Do List App",
     image: project3,
     description:
       "A simple to-do list application with features like task creation, deletion, and completion tracking.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["HTML", "CSS", "React.js", "Tailwind CSS"],
   },
   {
     title: "Zentry-clone",
     image: project4,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A zlone of the website Zentry, with awesome animations with GSAP.",
+    technologies: ["HTML", "CSS", "React", "GSAP", "Tailwind CSS"],
   },
 ];
 

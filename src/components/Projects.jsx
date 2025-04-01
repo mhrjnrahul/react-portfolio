@@ -22,9 +22,7 @@ function Projects() {
                             className="max-w-sm h-auto w-full lg:w-1/4">
                                 <img src={project.image}
                                      alt={project.title} 
-                                     height={150}
-                                     width={150}
-                                     className="mb-6 rounded"/>
+                                     className="mb-6 rounded w-[150px] h-[150px] object-cover rounded"/>
                             </motion.div>
                             <motion.div 
                             whileInView={{ opacity: 1, x: 0 }}
