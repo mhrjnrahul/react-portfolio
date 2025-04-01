@@ -17,7 +17,7 @@ function ContactMe() {
                 <div className="bg-zinc-800 p-3 rounded-lg">
                   <Mail className="w-6 h-6 text-emerald-400" />
                 </div>
-                <div>
+                <div className="cursor-pointer">
                   <p className="text-gray-400 text-sm">Email</p>
                   <p className="text-gray-100">maharjanrahul58@gmail.com</p>
                 </div>
@@ -107,7 +107,7 @@ function ContactMe() {
 
             <button
               type="submit"
-              className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+              className="cursor-pointer w-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
             >
               <span>Send Message</span>
             </button>
