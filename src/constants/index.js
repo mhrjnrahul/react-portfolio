@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `I'm a passionate Front-End Developer focused on building  
                             high-performance web applications using React.js, Tailwind CSS, Framer-motion and GSAP. I 
@@ -19,6 +20,21 @@ When I'm not coding, you'll find me exploring new design trends. Let's collabora
 
 
 export const PROJECTS = [
+  {
+    title: "Ecommerce App",
+    image: project5,
+    description: "A modern eCommerce frontend built with React.js, featuring dynamic product listings, responsive design, and smooth user experience for browsing and managing cart items.",
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "GSAP", "Framer-motion"],
+    demo: "https://ecommerce-app-seven-chi.vercel.app/",
+  },
+  {
+    title: "Zentry-clone",
+    image: project4,
+    description:
+      "A clone of the website Zentry, with awesome animations with GSAP.",
+    technologies: ["HTML", "CSS", "React", "GSAP", "Tailwind CSS"],
+    demo: "https://zentry-web-clone.vercel.app/",
+  },
   {
     title: "Google Keep clone",
     image: project1,
@@ -41,14 +57,6 @@ export const PROJECTS = [
     description:
       "A simple to-do list application with features like task creation, deletion, and completion tracking.",
     technologies: ["HTML", "CSS", "React.js", "Tailwind CSS"],
-  },
-  {
-    title: "Zentry-clone",
-    image: project4,
-    description:
-      "A clone of the website Zentry, with awesome animations with GSAP.",
-    technologies: ["HTML", "CSS", "React", "GSAP", "Tailwind CSS"],
-    demo: "https://zentry-web-clone.vercel.app/",
   },
 ];
 
