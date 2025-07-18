@@ -2,7 +2,7 @@ import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiNodedotjs } from "react-icons/si";
 import { animate, easeIn, motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -65,12 +65,12 @@ function Technologies() {
                 animate="animate"className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
-                {/* <motion.div 
+                <motion.div 
                 variants={iconVariants(6)}
                 initial="initial"
                 animate="animate"className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <TbBrandNextjs className="text-7xl" />
-                </motion.div> */}
+                    <SiNodedotjs className="text-7xl text-green-400" />
+                </motion.div>
             </motion.div>
         </div>
     )
