@@ -4,27 +4,30 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `I'm a passionate Front-End Developer focused on building  
-                            high-performance web applications using React.js, Tailwind CSS, Framer-motion and GSAP. I 
-                            turn ideas into interactive, pixel-perfect designs that enhance user experience.`;
+export const HERO_CONTENT = `I'm a Full-Stack Developer from Nepal who loves the intersection of great design and solid engineering.
+ I craft responsive frontends with React & Tailwind, and build reliable backends with ASP.NET MVC & Web APIs.`;
 
-export const ABOUT_TEXT = `I'm Rahul Maharjan, a dedicated Front-End Developer with a strong passion 
-for crafting elegant, responsive, and user-friendly web applications.
+export const ABOUT_TEXT = `I'm Rahul Maharjan, a Full-Stack Developer from Lalitpur, Nepal. I build 
+responsive frontends with React & Tailwind, and I'm currently deepening 
+my backend skills with ASP.NET MVC and Web APIs at Aster Innovations.
 
-Beyond coding, I love exploring the latest web technologies, optimizing UI/UX design, 
-and pushing the boundaries of creativity. I thrive on problem-solving and continuous learning to
-stay ahead in the fast evolving tech landscape. Whether it’s building sleek landing pages or complex web applications,
-my goal is to create engaging and impactful digital solutions.
-
-When I'm not coding, you'll find me exploring new design trends. Let's collaborate!`;
-
+When I'm not coding, I'm usually exploring new design trends or picking up 
+something new in the .NET ecosystem. Always building, always learning.`;
 
 export const PROJECTS = [
   {
     title: "Ecommerce App",
     image: project5,
-    description: "A modern eCommerce frontend built with React.js, featuring dynamic product listings, responsive design, and smooth user experience for browsing and managing cart items.",
-    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "GSAP", "Framer-motion"],
+    description:
+      "A modern eCommerce frontend built with React.js, featuring dynamic product listings, responsive design, and smooth user experience for browsing and managing cart items.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Tailwind CSS",
+      "GSAP",
+      "Framer-motion",
+    ],
     demo: "https://ecommerce-app-seven-chi.vercel.app/",
   },
   {
@@ -59,4 +62,3 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React.js", "Tailwind CSS"],
   },
 ];
-

@@ -1,124 +1,127 @@
 import React from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+
+const contactItems = [
+  {
+    icon: <Mail className="w-5 h-5 text-emerald-400" />,
+    label: "Email",
+    value: "maharjanrahul58@gmail.com",
+    href: "mailto:maharjanrahul58@gmail.com",
+  },
+  {
+    icon: <Phone className="w-5 h-5 text-emerald-400" />,
+    label: "Phone",
+    value: "+977 9761697930",
+    href: null,
+  },
+  {
+    icon: <MapPin className="w-5 h-5 text-emerald-400" />,
+    label: "Location",
+    value: "Patan Dhoka, Lalitpur",
+    href: null,
+  },
+];
 
 function ContactMe() {
   return (
-    <div className="ml-[-20px] min-h-screen bg-black text-gray-100 p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Contact Info Section */}
-          <div className="bg-zinc-900/50 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8">
-              Get in Touch
-            </h1>
+    <div className="py-20">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -60 }}
+        transition={{ duration: 0.8 }}
+        className="my-20 text-center text-4xl"
+      >
+        Get in <span className="text-neutral-500">Touch</span>
+      </motion.h2>
 
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="bg-zinc-800 p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-emerald-400" />
-                </div>
-                <div className="cursor-pointer">
-                  <p className="text-gray-400 text-sm">Email</p>
-                  <a
-                    href="https://gmail.com"
-                    target="_blank"
-                    className="text-gray-100 hover:underline"
-                  >
-                    maharjanrahul58@gmail.com
-                  </a> 
-                </div>
-              </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
-              <div className="flex items-center space-x-4">
-                <div className="bg-zinc-800 p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-emerald-400" />
+        {/* Contact Info */}
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -60 }}
+          transition={{ duration: 0.8 }}
+          className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 md:p-8 backdrop-blur-sm"
+        >
+          <h3 className="text-white text-lg font-semibold mb-2">Let's connect</h3>
+          <p className="text-neutral-500 text-sm mb-8 leading-relaxed">
+            Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is always open.
+          </p>
+
+          <div className="space-y-5">
+            {contactItems.map((item, i) => (
+              <div key={i} className="flex items-center gap-4">
+                <div className="bg-neutral-800 p-3 rounded-xl flex-shrink-0">
+                  {item.icon}
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm">Phone</p>
-                  <p className="text-gray-100">+977 9761697930</p>
+                  <p className="text-neutral-500 text-xs mb-0.5">{item.label}</p>
+                  {item.href ? (
+                    <a href={item.href} className="text-neutral-200 text-sm hover:text-emerald-400 transition-colors">
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p className="text-neutral-200 text-sm">{item.value}</p>
+                  )}
                 </div>
               </div>
+            ))}
+          </div>
+        </motion.div>
 
-              <div className="flex items-center space-x-4">
-                <div className="bg-zinc-800 p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-emerald-400" />
-                </div>
-                <div>
-                  <p className="text-gray-400 text-sm">Location</p>
-                  <p className="text-gray-100">Patan Dhoka, Lalitpur</p>
-                </div>
-              </div>
-            </div>
+        {/* Form */}
+        <motion.form
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 60 }}
+          transition={{ duration: 0.8 }}
+          action="https://formsubmit.co/1a26f3102e0b309be8d93222041bd936"
+          method="POST"
+          className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 md:p-8 backdrop-blur-sm space-y-5"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div>
+            <label htmlFor="name" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+              Name
+            </label>
+            <input
+              type="text" id="name" name="name"
+              className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition placeholder-neutral-600"
+              placeholder="John Doe" required
+            />
           </div>
 
-          {/* Contact Form Section */}
-          <form
-            action="https://formsubmit.co/1a26f3102e0b309be8d93222041bd936"
-            method="POST"
-            className="space-y-6"
+          <div>
+            <label htmlFor="email" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+              Email
+            </label>
+            <input
+              type="email" id="email" name="email"
+              className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition placeholder-neutral-600"
+              placeholder="john@example.com" required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+              Message
+            </label>
+            <textarea
+              id="message" name="message" rows={5}
+              className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition resize-none placeholder-neutral-600"
+              placeholder="What's on your mind..." required
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white font-semibold text-sm py-3 px-4 rounded-xl transition-all duration-200"
           >
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-gray-400 text-sm mb-2"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full bg-zinc-800 rounded-lg px-4 py-3 text-gray-100 border border-zinc-700 focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition"
-                placeholder="John Doe"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-gray-400 text-sm mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-zinc-800 rounded-lg px-4 py-3 text-gray-100 border border-zinc-700 focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition"
-                placeholder="john@example.com"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-gray-400 text-sm mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="w-full bg-zinc-800 rounded-lg px-4 py-3 text-gray-100 border border-zinc-700 focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition resize-none"
-                placeholder="Your message here..."
-                required
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="cursor-pointer w-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
-            >
-              <span>Send Message</span>
-            </button>
-          </form>
-        </div>
+            Send Message
+          </button>
+        </motion.form>
       </div>
     </div>
   );
