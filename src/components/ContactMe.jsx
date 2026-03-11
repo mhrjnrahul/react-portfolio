@@ -36,7 +36,6 @@ function ContactMe() {
       </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-
         {/* Contact Info */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -44,10 +43,9 @@ function ContactMe() {
           transition={{ duration: 0.8 }}
           className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 md:p-8 backdrop-blur-sm"
         >
-          <h3 className="text-white text-lg font-semibold mb-2">Let's connect</h3>
-          <p className="text-neutral-500 text-sm mb-8 leading-relaxed">
-            Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is always open.
-          </p>
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Let's connect
+          </h3>
 
           <div className="space-y-5">
             {contactItems.map((item, i) => (
@@ -56,9 +54,14 @@ function ContactMe() {
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-neutral-500 text-xs mb-0.5">{item.label}</p>
+                  <p className="text-neutral-500 text-xs mb-0.5">
+                    {item.label}
+                  </p>
                   {item.href ? (
-                    <a href={item.href} className="text-neutral-200 text-sm hover:text-emerald-400 transition-colors">
+                    <a
+                      href={item.href}
+                      className="text-neutral-200 text-sm hover:text-emerald-400 transition-colors"
+                    >
                       {item.value}
                     </a>
                   ) : (
@@ -83,35 +86,53 @@ function ContactMe() {
           <input type="hidden" name="_template" value="table" />
 
           <div>
-            <label htmlFor="name" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+            <label
+              htmlFor="name"
+              className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider"
+            >
               Name
             </label>
             <input
-              type="text" id="name" name="name"
+              type="text"
+              id="name"
+              name="name"
               className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition placeholder-neutral-600"
-              placeholder="John Doe" required
+              placeholder="John Doe"
+              required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+            <label
+              htmlFor="email"
+              className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider"
+            >
               Email
             </label>
             <input
-              type="email" id="email" name="email"
+              type="email"
+              id="email"
+              name="email"
               className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition placeholder-neutral-600"
-              placeholder="john@example.com" required
+              placeholder="john@example.com"
+              required
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider">
+            <label
+              htmlFor="message"
+              className="block text-neutral-400 text-xs mb-2 uppercase tracking-wider"
+            >
               Message
             </label>
             <textarea
-              id="message" name="message" rows={5}
+              id="message"
+              name="message"
+              rows={5}
               className="w-full bg-neutral-800 border border-neutral-700 rounded-xl px-4 py-3 text-neutral-100 text-sm focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 focus:outline-none transition resize-none placeholder-neutral-600"
-              placeholder="What's on your mind..." required
+              placeholder="What's on your mind..."
+              required
             />
           </div>
 
