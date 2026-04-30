@@ -78,7 +78,7 @@ function ContactMe() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 60 }}
           transition={{ duration: 0.8 }}
-          action="https://formsubmit.co/1a26f3102e0b309be8d93222041bd936"
+          action="https://formsubmit.co/1a26f3102e0b309be8d93222041bd936 "
           method="POST"
           className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 md:p-8 backdrop-blur-sm space-y-5"
         >
